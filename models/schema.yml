@@ -2,14 +2,17 @@ version: 2
 
 models:
   - name: dim_listings_cleansed
+    description: Cleansed table which contains Airbnb listings in Berlin
     columns:
 
      - name: listing_id
+       description: Acts as the primary key for property listings
        tests:
          - unique
          - not_null
 
      - name: host_id
+       description: This is host's id, a unique key for every property owner
        tests:
          - not_null
          - relationships:
@@ -17,6 +20,7 @@ models:
              field: host_id
 
      - name: room_type
+       description: Type of room. There are 4 classes in this attribute
        tests:
          - accepted_values:
              values: ['Entire home/apt',
