@@ -1,15 +1,18 @@
-Welcome to your new dbt project!
+Airbnb Berlin Data Pipeline
+This project uses dbt, Snowflake and Preset for an ELT pipeline
 
 ### Using the starter project
 
 Try running the following commands:
-- dbt run
-- dbt test
+- dbt run (for running dbt)
+- dbt test (for checking if the tests are valid)
+- dbt compile (for compiling dbt code to SQL. You can find the SQL code in target folder)
+- dbt docs generate (for generating documentation from md and yml files. You should use this command before serving)
+- dbt docs serve (for serving the documentation on localhost:8080)
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## This is the lineage graph for the pipeline
+![Lineage Graph](assets/lineage.png)
+
+## Preset dashboard
+![Preset Dashboard](assets/preset.png)
