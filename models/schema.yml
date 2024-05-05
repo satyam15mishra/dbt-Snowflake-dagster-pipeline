@@ -59,7 +59,7 @@ models:
               config:
                 severity: warn
 
-          - dbt_expectations.expect_values_to_be_of_type:
+          - dbt_expectations.expect_column_values_to_be_of_type:
               column_type: number
               config:
                 severity: warn
